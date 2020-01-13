@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            body {
+                text-align: center;
+                background-color: pink;
+            }  
+            h2 {
+                font-size: 50px;
+                color: indigo;
+            }
+            input[type=text] {
+                padding: 12px 20px;
+                margin: 8px 5px;
+                box-sizing: border-box;
+                font-size: 15px;
+            }
+            input[placeholder] {
+                text-align: center;
+                color: purple;
+            }
+            input[type=submit] {
+                -webkit-appearance: none;
+                height: 3em;
+                background-color: red;
+                color: pink
+            }
+        </style>
+    </head>
+    <body>
+        <h2> Here's your encrypted text: <%= encrypted_text%></h2>
+        <form>
+            <input type='text' name="str" size = "50" placeholder="Type text that you would like to encrypt"/>
+            <input type = 'text' name = 'shift' size = "10" maxlength="4" placeholder = "Enter a shift"/>
+            <input type='submit' value='Encrypt!' />
+        </form>
+    </body>
+</html>
